@@ -14,5 +14,15 @@
             </p>
             <p class="item item-icon-left"><i class="icon ion-iphone"></i>{{contact.user.cell}}</p>
         </div>
+        <div data-tap-disabled="true" id="googleMap">
+            <img class="map-pin-center" src="img/map-pin.png">
+            <ui-gmap-google-map
+                    control="map.control"
+                    center="map.center"
+                    zoom="map.zoom">
+
+            </ui-gmap-google-map>
+        </div>
+
     </ion-content>
 </ion-view>
