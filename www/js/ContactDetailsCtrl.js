@@ -12,7 +12,7 @@ angular.module('starter')
 
         $scope.contact = ContactsService.GetContact(index);
             $scope.map = {
-                zoom: 15,
+                zoom: 10,
                 center: GeolocationService.getDefaultPosition(),
                 control: {}
             };
