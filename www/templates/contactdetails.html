@@ -1,0 +1,18 @@
+<ion-view title="Contact Details">
+    <ion-content>
+        <div class="list card">
+            <div class="item">
+                <h1>{{contact.user.name.first}}</h1>
+                <img ng-src="{{contact.user.picture.medium}}"/>
+            </div>
+            <p class="item item-icon-left"><i class="icon ion-home"></i>{{contact.user.location.street}}   <br />
+                {{contact.user.location.city}}, {{contact.user.location.state}} {{contact.user.location.zip}}
+            </p>
+            <p class="item item-icon-left"><i class="icon ion-email"></i>{{contact.user.email}}</p>
+            <p class="item item-icon-left">
+                <phoneicon></phoneicon>{{contact.user.phone}}
+            </p>
+            <p class="item item-icon-left"><i class="icon ion-iphone"></i>{{contact.user.cell}}</p>
+        </div>
+    </ion-content>
+</ion-view>

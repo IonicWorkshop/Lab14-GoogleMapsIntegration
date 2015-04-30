@@ -1,0 +1,14 @@
+<ion-view title="Contacts">
+    <ion-content>
+        <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+
+        <ion-list>
+            <ion-item class="item-avatar item-icon-right" ng-repeat="contact in contacts" ng-href="#/contactdetails/{{$index}}">
+                <img ng-src="{{contact.user.picture.thumbnail}}">
+                <p>{{contact.user.name.first}}</p>
+                <p>{{contact.user.email}}</p>
+                <i class="icon ion-chevron-right icon-accessory" ></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

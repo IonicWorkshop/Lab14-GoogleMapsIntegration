@@ -1,0 +1,8 @@
+{
+  "name": "Codepalousa Workshop",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "index",
+    "watch"
+    ]
+}
